@@ -260,7 +260,7 @@ static int tail_scan_path(const char *path, struct flb_tail_config *ctx)
                 count++;
             }
             else {
-                flb_plg_debug(ctx->ins, "scan_blog add(): dismissed: %s, inode %li",
+                flb_plg_debug(ctx->ins, "scan_glob add(): dismissed: %s, inode %li",
                               globbuf.gl_pathv[i], st.st_ino);
             }
         }
